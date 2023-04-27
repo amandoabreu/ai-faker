@@ -100,6 +100,207 @@ Will return something like:
 
 The more descriptive your attributes, the better the returned values will be.
 
+You can get **pretty** complex, it works :) eg:
+
+```
+const emptyObject = {
+   "userProfile":{
+      "id":"",
+      "firstName":"",
+      "lastName":"",
+      "email":"",
+      "phoneNumber":"",
+      "address":{
+         "street":"",
+         "city":"",
+         "state":"",
+         "postalCode":"",
+         "country":""
+      },
+      "socialMedia":{
+         "facebook":{
+            "url":"",
+            "username":""
+         },
+         "twitter":{
+            "url":"",
+            "username":""
+         },
+         "instagram":{
+            "url":"",
+            "username":""
+         },
+         "linkedin":{
+            "url":"",
+            "username":""
+         }
+      },
+      "employmentHistory":[
+         {
+            "jobTitle":"",
+            "company":"",
+            "location":{
+               "city":"",
+               "state":"",
+               "country":""
+            },
+            "startDate":"",
+            "endDate":"",
+            "responsibilities":[
+               
+            ]
+         }
+      ],
+      "education":[
+         {
+            "degree":"",
+            "major":"",
+            "institution":"",
+            "graduationYear":""
+         }
+      ],
+      "skills":[
+         {
+            "name":"",
+            "level":"",
+            "yearsOfExperience":""
+         }
+      ],
+      "languages":[
+         {
+            "name":"",
+            "proficiency":""
+         }
+      ],
+      "projects":[
+         {
+            "title":"",
+            "description":"",
+            "startDate":"",
+            "endDate":"",
+            "technologiesUsed":[
+               
+            ]
+         }
+      ],
+      "awards":[
+         {
+            "title":"",
+            "description":"",
+            "year":""
+         }
+      ]
+   }
+}
+```
+
+Returns:
+
+```
+{
+   "userProfile":{
+      "id":"987654321",
+      "firstName":"Maria",
+      "lastName":"Gonzalez",
+      "email":"mariagonzalez@example.com",
+      "phoneNumber":"+1 (555) 123-4567",
+      "address":{
+         "street":"456 Main St.",
+         "city":"Smalltown",
+         "state":"TX",
+         "postalCode":"67890",
+         "country":"United States"
+      },
+      "socialMedia":{
+         "facebook":{
+            "url":"https://www.facebook.com/mariagonzalez",
+            "username":"mariagonzalez"
+         },
+         "twitter":{
+            "url":"https://www.twitter.com/mariagonzalez",
+            "username":"mariagonzalez"
+         },
+         "instagram":{
+            "url":"https://www.instagram.com/mariagonzalez",
+            "username":"mariagonzalez"
+         },
+         "linkedin":{
+            "url":"https://www.linkedin.com/in/mariagonzalez",
+            "username":"mariagonzalez"
+         }
+      },
+      "employmentHistory":[
+         {
+            "jobTitle":"Marketing Manager",
+            "company":"XYZ Corporation",
+            "location":{
+               "city":"Houston",
+               "state":"TX",
+               "country":"United States"
+            },
+            "startDate":"2015-06-01",
+            "endDate":"2022-02-28",
+            "responsibilities":[
+               "Developed and implemented marketing strategies to increase sales.",
+               "Managed a team of 5 marketing professionals.",
+               "Analyzed market trends to identify opportunities for growth."
+            ]
+         }
+      ],
+      "education":[
+         {
+            "degree":"Master of Business Administration (MBA)",
+            "major":"Marketing",
+            "institution":"University of Texas",
+            "graduationYear":"2015"
+         }
+      ],
+      "skills":[
+         {
+            "name":"Marketing",
+            "level":"Expert",
+            "yearsOfExperience":"10"
+         },
+         {
+            "name":"Project Management",
+            "level":"Intermediate",
+            "yearsOfExperience":"5"
+         }
+      ],
+      "languages":[
+         {
+            "name":"Spanish",
+            "proficiency":"Native"
+         },
+         {
+            "name":"English",
+            "proficiency":"Fluent"
+         }
+      ],
+      "projects":[
+         {
+            "title":"Product Launch Campaign",
+            "description":"Developed and executed a successful product launch campaign for a new line of software products.",
+            "startDate":"2019-04-01",
+            "endDate":"2019-07-01",
+            "technologiesUsed":[
+               "Google AdWords",
+               "Facebook Ads",
+               "Email Marketing"
+            ]
+         }
+      ],
+      "awards":[
+         {
+            "title":"Marketing Excellence Award",
+            "description":"Received award for outstanding performance in marketing.",
+            "year":"2021"
+         }
+      ]
+   }
+}
+```
+
 # Doesn't do:
 
-Images, yet!
+No images, yet!
