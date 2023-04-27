@@ -336,22 +336,26 @@ Returns:
 
 Most of the time a good attribute name will return good values. But some things are ambiguous, and other things you want a certain way. Thankfully, you can give it a hint as to what you want.
 
-If you want the attribute `id` to get a uuid, you can give it a hint by doing:
+Examples that are all possible:
 
 ```
 const user = {
+    "fullName":<french name>,
     "id":"<uuid>",
     "active":bool,
-    "team":blue|red|purple|black
+    "team":blue|red|purple|black,
+    "address":"in ohio"
 }
 ```
 returns:
 
 ```
 const user = {
+    "fullName":"Emilie Dubois",
     "id":"98de56f0-4426-4bdc-bf6a-9ddc8a1b2f6a",
     "active":false,
-    "team":"blue"
+    "team":"blue",
+    "address": "123 Main St, Cleveland, Ohio"
 }
 ```
 
