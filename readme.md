@@ -332,6 +332,53 @@ Returns:
 }
 ```
 
+# Help it with hints
+
+If you want the attribute `id` to get a uuid, you can give it a hint by doing:
+
+```
+const user = {
+    "id":"<uuid>",
+    ...
+}
+```
+returns:
+
+```
+const user = {
+    "id":"98de56f0-4426-4bdc-bf6a-9ddc8a1b2f6a",
+    ...
+}
+```
+
+## More complex hints
+
+You can help it come up with values by giving it any sort of hint. As complex or as simple you need. For example:
+
+Input object:
+
+```
+{
+    ...
+    "hobbies":["5 hobbies about farming"]
+}
+```
+
+Returns:
+
+```
+{
+    ...
+    "hobbies":[
+        "Growing organic vegetables", 
+        "Raising chickens for eggs", 
+        "Canning fruits and vegetables", 
+        "Beekeeping", 
+        "Making homemade cheese"
+    ]
+}
+```
+
 # Doesn't do:
 
 No images, yet!
