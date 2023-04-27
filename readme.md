@@ -42,7 +42,7 @@ For example:
 ```
 var emptyUser = {
     "fullName":"",
-    "age":"",
+    "age":integer,
     "gender":"",
     "address":"",
     "hobbies":[]
@@ -56,7 +56,7 @@ Will return something like:
 ```
 {
     "fullName":"David Brown",
-    "age":"38",
+    "age":38,
     "gender":"male",
     "address":"789 Maple Street",
     "hobbies": [
@@ -341,7 +341,8 @@ If you want the attribute `id` to get a uuid, you can give it a hint by doing:
 ```
 const user = {
     "id":"<uuid>",
-    ...
+    "active":bool,
+    "team":blue|red|purple|black
 }
 ```
 returns:
@@ -349,7 +350,8 @@ returns:
 ```
 const user = {
     "id":"98de56f0-4426-4bdc-bf6a-9ddc8a1b2f6a",
-    ...
+    "active":false,
+    "team":"blue"
 }
 ```
 
