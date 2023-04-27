@@ -4,6 +4,37 @@ Instead of having to figure out which function to use for your faking needs on s
 It populates your empty objects with very realistic data related to whatever object you want to fake!
 
 You don't need to read any docs. Your attributes are the description of the values the function will return.
+
+Most faker libs:
+
+```
+const user = {
+    id: faker.datatype.uuid(),
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
+    email: faker.internet.email(),
+    phoneNumber: faker.phone.phoneNumber(),
+    address: {
+      street: faker.address.streetAddress(),
+      city: faker.address.city(),
+      state: faker.address.state(),
+      zipCode: faker.address.zipCode(),
+      country: faker.address.country()
+    },
+    avatar: faker.internet.avatar(),
+    jobTitle: faker.name.jobTitle(),
+    company: {
+      name: faker.company.companyName(),
+      catchPhrase: faker.company.catchPhrase(),
+      bs: faker.company.bs()
+    },
+    website: faker.internet.url(),
+    birthDate: faker.date.past(50, new Date())
+  };
+```
+
+AI Faker allows you to just send the empty object to the faker() function and get a populated one back!
+
 ## Usage
 `aifaker.fake(<number of objects>,<object>)`
 
@@ -18,10 +49,11 @@ var emptyUser = {
 }
 
 aifaker.fake(1, emptyUser);
+```
 
 Will return something like:
 
-/*
+```
 {
     "fullName":"David Brown",
     "age":"38",
@@ -33,7 +65,6 @@ Will return something like:
         "reading"
     ]
 }
-*/
 ```
 
 If you choose more than 1 in "number of objects", it returns an array of objects as you specified. For example:
@@ -53,10 +84,11 @@ var emptyCompany = {
 }
 
 aifaker.fake(3, emptyCompany);
+```
 
 Will return something like:
 
-/*
+```
 [
    {
       "companyName":"Redwood Enterprises",
@@ -95,7 +127,6 @@ Will return something like:
       "companyMotto":"Sustainability for a better future."
    }
 ]
-*/
 ```
 
 The more descriptive your attributes, the better the returned values will be.
