@@ -334,6 +334,8 @@ Returns:
 
 # Help it with hints
 
+Most of the time a good attribute name will return good values. But some things are ambiguous, and other things you want a certain way. Thankfully, you can give it a hint as to what you want.
+
 If you want the attribute `id` to get a uuid, you can give it a hint by doing:
 
 ```
