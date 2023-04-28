@@ -1,4 +1,6 @@
 # AI Faker
+Generate lots of fake but real-looking data for development and testing!
+
 An experimental object faker library using AI.
 
 Instead of having to figure out which function to use for your faking needs on some super long list of available functions, you can use AI faker.
